@@ -30,7 +30,6 @@ export class LoginGoogleController {
       secure: false,
       maxAge: 3600000,
       path: '/',
-      domain: 'localhost',
     });
 
     res.cookie('refreshToken', refreshToken, {
@@ -39,9 +38,8 @@ export class LoginGoogleController {
       secure: false,
       maxAge: 3600000,
       path: '/',
-      domain: 'localhost',
     });
 
-    res.status(200).redirect('https://back-end-animewave.onrender.com/home');
+    res.status(200).redirect('https://front-end-anime-wave.vercel.app/home');
   }
 }
