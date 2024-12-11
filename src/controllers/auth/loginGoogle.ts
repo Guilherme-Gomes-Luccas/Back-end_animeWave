@@ -42,6 +42,6 @@ export class LoginGoogleController {
       domain: 'localhost',
     });
 
-    res.status(200).redirect('http://localhost:3000/home');
+    res.status(200).redirect('https://back-end-animewave.onrender.com/home');
   }
 }
