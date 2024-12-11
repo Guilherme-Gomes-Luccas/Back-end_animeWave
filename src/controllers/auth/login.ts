@@ -1,11 +1,11 @@
 import { Controller, Post, Req, Res } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { validateUserToLogin } from '../../schemas/userSchema';
-import { getUserByEmail, updateUserData } from '../../models/userModel';
+import { validateUserToLogin } from 'src/models/schemas/UserSchema';
+import { getUserByEmail, updateUserData } from 'src/models/userModel';
 import * as bcrypt from 'bcrypt';
 import { generateAccessToken } from './config/generateAccessToken';
 import { generateRefreshToken } from './config/generateRefreshToken';
-import { User } from '../../models/userInterface';
+import { User } from 'src/models/userInterface';
 
 @Controller('login')
 export class LoginUser {
