@@ -33,7 +33,7 @@ export class LoginGoogleController {
     });
 
     res.cookie('refreshToken', refreshToken, {
-      httpOnly: true,
+      httpOnly: false,
       sameSite: 'lax',
       secure: true,
       maxAge: 3600000,
