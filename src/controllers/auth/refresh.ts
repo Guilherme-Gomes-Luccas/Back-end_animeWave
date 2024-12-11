@@ -47,7 +47,6 @@ export class RefreshController {
         secure: false,
         maxAge: 3600000,
         path: '/',
-        domain: 'localhost',
       });
 
       return res.status(200).json({
