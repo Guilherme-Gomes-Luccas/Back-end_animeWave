@@ -1,6 +1,6 @@
 import { Controller, Post, Req, Res } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { validateUserToCreate } from 'src/models/schemas/userSchema';
+import { validateUserToCreate } from 'src/models/schemas/UserSchema';
 import { v4 as uuid } from 'uuid';
 import * as bcrypt from 'bcrypt';
 import { createUser } from 'src/models/userModel';
