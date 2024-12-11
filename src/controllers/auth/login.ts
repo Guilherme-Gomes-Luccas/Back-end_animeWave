@@ -64,7 +64,6 @@ export class LoginUser {
         secure: false,
         maxAge: 3600000,
         path: '/',
-        domain: 'localhost',
       });
 
       res.cookie('refreshToken', refreshToken, {
