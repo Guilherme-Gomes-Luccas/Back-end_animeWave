@@ -30,6 +30,7 @@ export class LoginGoogleController {
       secure: true,
       maxAge: 3600000,
       path: '/',
+      domain: "front-end-anime-wave.vercel.app"
     });
 
     res.cookie('refreshToken', refreshToken, {
@@ -37,7 +38,8 @@ export class LoginGoogleController {
       sameSite: 'lax',
       secure: true,
       maxAge: 3600000,
-      path: '/'
+      path: '/',
+      domain: "front-end-anime-wave.vercel.app"
     });
 
     res.status(200).redirect('https://front-end-anime-wave.vercel.app/home');
